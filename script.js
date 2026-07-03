@@ -1,19 +1,21 @@
-// Menampilkan pesan saat halaman selesai dimuat
-window.onload = function () {
-    alert("Selamat datang di Website Sederhana!");
-};
+window.onload=function(){
 
-// Mengubah teks saat judul diklik
-const judul = document.querySelector("h1");
+    alert("Selamat datang di Website Kelompok Six-Seven");
 
-judul.addEventListener("click", function () {
-    judul.textContent = "Selamat Belajar Git & GitHub 🚀";
-    judul.style.color = "#dc2626";
-});
+}
 
-// Menampilkan pesan saat paragraf diklik
-const paragraf = document.querySelector("p");
+const tombol=document.getElementById("btn");
 
-paragraf.addEventListener("click", function () {
-    alert("Terima kasih telah mengunjungi website ini!");
-});
+tombol.onclick=function(){
+
+    alert("Terima kasih telah mengunjungi website kami.");
+
+}
+
+const judul=document.querySelector("h1");
+
+judul.onclick=function(){
+
+    judul.innerHTML="Belajar Git & GitHub 🚀";
+
+}
